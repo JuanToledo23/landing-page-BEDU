@@ -55,3 +55,7 @@ body {
   border: solid 1px rgb(0, 208, 255);
   font-weight: 600;
 }
+
+.name {
+  color: pink;
+}
