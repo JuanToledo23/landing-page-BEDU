@@ -1,67 +1,118 @@
-.parrafo {
-  font-weight: bold;
-  color: red;
-  background-color: blue;
-  font-size: 30px;
-}
-
-.image {
-  width: 250px;
-}
-
+/* Estilos CSS generales para la apariencia visual de la página web */
 body {
-  background-color: #616161f2;
+  font-family: Arial, sans-serif; /* Fuente estándar, fácil de leer */
+  margin: 0; /* Elimina márgenes externos predeterminados */
+  padding: 0; /* Elimina relleno interno predeterminado */
+  background-color: #f4f4f9; /* Fondo claro, cómodo visualmente */
+  color: #333; /* Color oscuro para contraste con el fondo */
+}
+
+/* Barra de navegación horizontal con enlaces claramente visibles */
+nav ul {
+  list-style: none; /* Quita puntos de lista */
+  display: flex; /* Utiliza Flexbox para disposición horizontal */
+  background-color: #5a9; /* Fondo verde agradable */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  padding: 10px;
   margin: 0;
 }
-
-.primaryButton {
-  background-color: #025157;
+nav ul li a {
+  color: white; /* Texto blanco para buena visibilidad */
+  padding: 10px 15px; /* Espaciado interno para mejor interacción */
+  text-decoration: none; /* Quita subrayado de enlaces */
+  transition: background-color 0.3s; /* Efecto visual al pasar cursor */
+}
+nav ul li a:hover {
+  background-color: #478; /* Cambio visual al pasar el cursor sobre el enlace */
 }
 
-.header {
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 0;
-  white-space: nowrap;
+/* Uso de Flexbox para mostrar tarjetas en fila horizontal con igual distribución */
+.flex-section {
+  display: flex;
+  justify-content: space-around; /* Distribuye tarjetas con espacios iguales */
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados para estética */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar del fondo */
+  flex: 1; /* Cada tarjeta toma igual espacio disponible */
+  margin: 0 10px;
+  text-align: center;
 }
 
-.header > * {
+/* Sección usando CSS Grid para acomodar elementos en columnas claramente organizadas */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Divide en dos columnas iguales */
+  gap: 15px; /* Espacio entre elementos de la cuadrícula */
+  padding: 20px;
+}
+.grid-item {
+  background-color: #8ac;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos para simular botón similar al de un framework CSS */
+.btn {
+  display: block; /* Permite centrar el botón fácilmente */
+  margin: 20px auto; /* Centra automáticamente horizontalmente */
+  padding: 10px 25px;
+  background-color: #f95; /* Color llamativo */
+  color: white;
+  border: none; /* Sin bordes para aspecto moderno */
+  border-radius: 20px; /* Bordes muy redondeados */
+  cursor: pointer; /* Indica interactividad al cursor */
+  transition: transform 0.3s; /* Efecto de aumento al pasar cursor */
+}
+.btn:hover {
+  transform: scale(1.1); /* Agranda el botón ligeramente al pasar cursor */
+}
+
+/* Animación en la sección de contacto para captar la atención del usuario */
+.animation-section {
+  text-align: center;
+  padding: 20px;
+}
+.animate-box {
   display: inline-block;
-  font-size: 16px;
-  vertical-align: middle;
-  height: 100%;
-  line-height: 45px;
+  background-color: #e67;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.3s, background-color 0.3s; /* Efectos visuales dinámicos */
+}
+.animate-box:hover {
+  transform: translateY(-10px); /* Desplaza hacia arriba al pasar cursor */
+  background-color: #d56; /* Cambia color ligeramente para destacar la interacción */
 }
 
-.logo > img {
-  height: 100%;
-  width: 25px;
+/* Pie de página con diseño simple y color oscuro para diferenciar del contenido principal */
+footer {
+  text-align: center;
+  background-color: #444; /* Fondo oscuro */
+  color: white; /* Texto claro para contraste */
+  padding: 10px 0;
 }
 
-.logo {
-  width: 15%;
-  border: solid 1px red;
-}
-
-.navbar {
-  width: 70%;
-  border: solid 1px rgb(26, 255, 0);
-  font-weight: 500;
-}
-
-.actions {
-  width: 15%;
-  border: solid 1px rgb(0, 208, 255);
-  font-weight: 600;
-}
-
-.angelgo {
-  color: #718d45;
-  background: #025157;
-  padding: 0.3em;
-}
-
-.name {
-  color: pink;
+/* Diseño adaptativo para dispositivos móviles */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Cambia orientación a vertical */
+  }
+  .flex-section {
+    flex-direction: column; /* Tarjetas en columna para pantallas estrechas */
+  }
+  .grid-section {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+  }
+  .card,
+  .grid-item {
+    margin-bottom: 10px;
+  }
 }

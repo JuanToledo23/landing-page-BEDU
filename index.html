@@ -1,40 +1,64 @@
+<!-- Documento HTML con estructura básica para una página web sencilla -->
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>Juan Toledo</title>
+    <!-- Configuración básica de la página -->
+    <meta charset="UTF-8" />
+    <!-- Define la codificación de caracteres para la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Hace que la página sea responsive y adaptable a diferentes dispositivos -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Conecta el archivo CSS externo con el HTML -->
+    <title>Landing Page</title>
+    <!-- Título que aparece en la pestaña del navegador -->
   </head>
   <body>
-    <header class="header">
-      <a href="index.html" class="logo">
-        <img src="./img/jira.svg" alt="Logo de Jira" />
-      </a>
-
-      <nav class="navbar">NavBar</nav>
-
-      <div class="actions">Actions</div>
+    <!-- Encabezado que contiene la barra de navegación -->
+    <header>
+      <nav>
+        <ul>
+          <!-- Lista de enlaces para navegar en la página -->
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <h1>Build your blog. Build your business.</h1>
-    <h4>
-      Instantly publish articles, drive more traffic, grow your email list, and
-      see your blog’s impact on sales.
-    </h4>
-    <div style="width: 300px">
-      <p class="parrafo">
-        Instantly publish articles, drive more traffic, grow your email list,
-        and see your blog’s impact on sales.
-      </p>
-    </div>
-    <img src="./img/perro.jpg" alt="Perro" class="image" />
+    <main>
+      <!-- Sección con tarjetas utilizando Flexbox para distribuir elementos horizontalmente -->
+      <section id="servicios" class="flex-section">
+        <div class="card">Servicio 1</div>
+        <!-- Cada tarjeta representa un servicio ofrecido -->
+        <div class="card">Servicio 2</div>
+        <div class="card">Servicio 3</div>
+      </section>
 
-    <a href="https://es.wikipedia.org/wiki/Golden_retriever" target="_blank">
-      <img src="./img/perro.jpg" alt="Perro" class="image" />
-    </a>
+      <!-- Sección utilizando CSS Grid para organizar elementos en columnas y filas -->
+      <section class="grid-section">
+        <div class="grid-item">1</div>
+        <!-- Elementos de la cuadrícula numerados como ejemplo -->
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+      </section>
 
-    <img src="./img/perro.jpg" alt="Perro" class="image" />
-    <button class="primaryButton">Guardar</button>
-    <h1 class="angelgo">&rightarrow; Angel Emmanuel Gonzalez Guzman</h1>
-    <h1 class="name">Nely Ibarra Guerra</h1>
+      <!-- Sección mostrando un botón estilizado (simulando un framework CSS) -->
+      <section class="framework-section">
+        <button class="btn">Botón</button>
+        <!-- Botón interactivo con efectos visuales -->
+      </section>
+
+      <!-- Sección con una animación para destacar y captar atención del usuario -->
+      <section id="contacto" class="animation-section">
+        <div class="animate-box">¡Contáctanos!</div>
+        <!-- Caja con texto animado -->
+      </section>
+    </main>
+
+    <!-- Pie de página (footer) con información adicional o derechos de autor -->
+    <footer>
+      <p>&copy; 2025 Landing Page</p>
+    </footer>
   </body>
 </html>
