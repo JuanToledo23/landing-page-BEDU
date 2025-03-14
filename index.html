@@ -1,64 +1,113 @@
-<!-- Documento HTML con estructura básica para una página web sencilla -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Configuración básica de la página -->
     <meta charset="UTF-8" />
-    <!-- Define la codificación de caracteres para la página -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Hace que la página sea responsive y adaptable a diferentes dispositivos -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Conecta el archivo CSS externo con el HTML -->
-    <title>Landing Page</title>
-    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Descubre México</title>
   </head>
   <body>
-    <!-- Encabezado que contiene la barra de navegación -->
     <header>
       <nav>
         <ul>
-          <!-- Lista de enlaces para navegar en la página -->
           <li><a href="#">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#lugares">Lugares Icónicos</a></li>
+          <li><a href="#cultura">Cultura y Tradiciones</a></li>
         </ul>
       </nav>
+      <div class="actions">
+        <a>Sign In</a>
+      </div>
     </header>
 
     <main>
-      <!-- Sección con tarjetas utilizando Flexbox para distribuir elementos horizontalmente -->
-      <section id="servicios" class="flex-section">
-        <div class="card">Servicio 1</div>
-        <!-- Cada tarjeta representa un servicio ofrecido -->
-        <div class="card">Servicio 2</div>
-        <div class="card">Servicio 3</div>
+      <section class="banner">
+        <h1>Descubre la Belleza de México</h1>
+        <p>Un país lleno de historia, cultura y paisajes impresionantes.</p>
       </section>
 
-      <!-- Sección utilizando CSS Grid para organizar elementos en columnas y filas -->
-      <section class="grid-section">
-        <div class="grid-item">1</div>
-        <!-- Elementos de la cuadrícula numerados como ejemplo -->
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
+      <section id="lugares" class="flex-section">
+        <div class="card">
+          <img src="./img/chichenitza.jpeg" alt="Chichén Itzá" />
+          <h2>Chichén Itzá</h2>
+          <p>Una de las 7 maravillas del mundo moderno, ubicada en Yucatán.</p>
+        </div>
+        <div class="card">
+          <img src="./img/cancun.jpg" alt="Cancún" />
+          <h2>Cancún</h2>
+          <p>
+            Playas paradisíacas con aguas cristalinas en el Caribe Mexicano.
+          </p>
+        </div>
+        <div class="card">
+          <img src="./img/cdmx.webp" alt="CDMX" />
+          <h2>CDMX</h2>
+          <p>
+            Una ciudad vibrante con museos, gastronomía y cultura sin igual.
+          </p>
+        </div>
       </section>
 
-      <!-- Sección mostrando un botón estilizado (simulando un framework CSS) -->
-      <section class="framework-section">
-        <button class="btn">Botón</button>
-        <!-- Botón interactivo con efectos visuales -->
+      <section id="cultura" class="grid-section">
+        <div class="grid-item">
+          <div class="item-header">
+            <img src="./img/food.svg" alt="Gastronomía" width="50px" />
+            <h3>Gastronomía</h3>
+          </div>
+          <p>
+            Desde los tacos hasta el mole, la comida mexicana es Patrimonio
+            Cultural de la Humanidad.
+          </p>
+          <div class="item-footer">
+            <a href="#">Ver más</a>
+          </div>
+        </div>
+        <div class="grid-item">
+          <h3>Día de Muertos</h3>
+          <p>
+            Una festividad única que celebra la vida y honra a los difuntos.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>Mariachi</h3>
+          <p>La música tradicional mexicana que resuena en todo el mundo.</p>
+        </div>
+        <div class="grid-item">
+          <h3>Artesanías</h3>
+          <p>Colores vibrantes y tradición en cada pieza hecha a mano.</p>
+        </div>
       </section>
 
-      <!-- Sección con una animación para destacar y captar atención del usuario -->
-      <section id="contacto" class="animation-section">
-        <div class="animate-box">¡Contáctanos!</div>
-        <!-- Caja con texto animado -->
+      <section class="promo">
+        <article class="video">
+          <video controls>
+            <source type="video/webm" src="./video/video1.webm" />
+            <source type="video/webm" src="./video/video1.mp4" />
+          </video>
+          <img src="./img/see.png" alt="See how it works" />
+        </article>
+        <article class="publish">
+          <h3>Publish to your blog in minutes, not hours.</h3>
+          <p>
+            Your blog is your most powerful asset to build, engage, and retain a
+            loyal audience. But you don’t have hours to create content that may
+            or may not work. With Matcha, instantly publish from our library of
+            10,000+ professionally written articles and build your email list
+            faster with our powerful conversion tool.
+          </p>
+          <form>
+            <p>Start publishing today:</p>
+            <div>
+              <input type="text" placeholder="Enter email" />
+              <button>Start My Trial</button>
+            </div>
+          </form>
+        </article>
       </section>
     </main>
 
-    <!-- Pie de página (footer) con información adicional o derechos de autor -->
     <footer>
-      <p>&copy; 2025 Landing Page</p>
+      <p>&copy; 2025 Descubre México</p>
     </footer>
   </body>
 </html>
