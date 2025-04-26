@@ -1,0 +1,205 @@
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+.about-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+.about-page .top-info {
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+.about-page .top-info h1 {
+  color: #c1272d;
+  font-size: 36px;
+  font-family: "Alegreya", serif;
+  transition: color 0.3s ease-in-out, font-size 0.5s ease;
+}
+.about-page .top-info h1:hover {
+  color: #04ff19;
+  font-size: 38px;
+}
+.about-page .top-info p {
+  font-size: 18px;
+  color: #333;
+}
+.about-page .features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.about-page .features .feature {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-page .features .feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 16px rgba(0, 0, 0, 0.2);
+}
+.about-page .features .feature img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.about-page .features .feature h3 {
+  color: #025157;
+  margin-bottom: 10px;
+  transition: color 0.2s ease, transform 0.4s ease;
+}
+.about-page .features .feature h3:hover {
+  color: #1d8b24;
+  transform: scale(1.1);
+}
+.about-page .features .feature p {
+  font-size: 14px;
+  color: #3f3f3f;
+}
+.about-page .arrow-wrapper {
+  margin-top: 60px;
+}
+.about-page .flecha {
+  margin: 0 auto;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 35px;
+}
+.about-page .flecha .flecha-contenedor {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+.about-page .flecha .flecha-contenedor .flecha-animada {
+  position: absolute;
+  animation-name: up-and-down;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: 130px;
+  width: 130px;
+}
+.about-page .flecha .flecha-contenedor .flecha-animada img {
+  width: 100%;
+  transform: rotate(-90deg);
+}
+@keyframes up-and-down {
+  0% {
+    top: 0;
+    background-color: #04ff19;
+  }
+  50% {
+    top: 60px;
+    background-color: #ff0404;
+  }
+  70% {
+    top: 60px;
+    background-color: #efff15;
+  }
+  100% {
+    top: 0;
+    background-color: #04c0ff;
+  }
+}
+
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.blog .card {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.blog .card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #025157;
+}
+.blog .card .metadata {
+  font-size: 0.9rem;
+  color: #135359;
+  margin: 10px 0;
+}
+.blog .card .metadata .category {
+  text-transform: uppercase;
+}
+.blog .card .metadata .read-time {
+  margin-left: 8px;
+}
+.blog .card .card-text {
+  font-size: 0.95rem;
+  color: #135359;
+}
+.blog .card .card-text .read-more a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.blog .card .card-text .read-more a:hover {
+  text-decoration: underline;
+}
+.blog .card .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.blog .card .author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.blog .card .author p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #135359;
+}
+
+/*# sourceMappingURL=about_styles.css.map */

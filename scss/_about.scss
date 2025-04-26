@@ -1,0 +1,122 @@
+.about-page {
+  padding: 40px 20px;
+  text-align: center;
+
+  .top-info {
+    margin-bottom: 50px;
+    padding-top: 30px;
+
+    h1 {
+      color: #c1272d;
+      font-size: 36px;
+      font-family: 'Alegreya', serif;
+      transition: color 0.3s ease-in-out, font-size 0.5s ease;
+      &:hover {
+        color: #04ff19;
+        font-size: 38px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .feature {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 16px rgba(0, 0, 0, 0.2);
+      }
+    
+      img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+    
+      h3 {
+        color: #025157;
+        margin-bottom: 10px;
+        transition: color 0.2s ease, transform 0.4s ease;
+        &:hover {
+          color: #1d8b24;
+          transform: scale(1.1);
+        }
+      }
+    
+      p {
+        font-size: 14px;
+        color: #3f3f3f;
+      }
+    }
+  }
+
+  .arrow-wrapper {
+    margin-top: 60px;
+  }
+  
+  .flecha {
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 35px;
+  
+    .flecha-contenedor {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      margin: 0 auto;
+  
+      .flecha-animada {
+        position: absolute;
+        animation-name: up-and-down;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        height: 130px;
+        width: 130px;
+  
+        img {
+          width: 100%;
+          transform: rotate(-90deg); // Flecha apunta hacia abajo
+        }
+      }
+  
+      @keyframes up-and-down {
+        0% {
+          top: 0;
+          background-color: #04ff19;
+        }
+        50% {
+          top: 60px;
+          background-color: #ff0404;
+        }
+        70% {
+          top: 60px;
+          background-color: #efff15;
+        }
+        100% {
+          top: 0;
+          background-color: #04c0ff;
+        }
+      }
+    }
+  }
+}
+

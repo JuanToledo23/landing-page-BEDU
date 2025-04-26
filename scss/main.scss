@@ -1,0 +1,133 @@
+@use "global" as *;
+@use "about" as *;
+
+.blog {
+  background-color: $white;
+  max-width: unset;
+  padding: 5% 10%;
+
+  .title {
+    @extend %base-title;
+  }
+
+  .process-list {
+    margin-top: 40px;
+    margin-bottom: 36px;
+
+    .process {
+      margin-bottom: 25px;
+
+      & > div {
+        & > h3 {
+          color: $dark-green-title;
+          margin-bottom: 0;
+          font-size: 30px;
+          font-weight: 500;
+        }
+
+        & > p {
+          color: $dark-green-text;
+          margin: 0;
+        }
+      }
+
+      .process-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        text-align: center;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  button {
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 12px;
+    width: 180px;
+    margin-bottom: 15px;
+  }
+}
+
+
+.blog {
+  .card {
+    background-color: $white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $dark-green-title;
+    }
+
+    .metadata {
+      font-size: 0.9rem;
+      color: $dark-green-text;
+      margin: 10px 0;
+
+      .category {
+        text-transform: uppercase;
+      }
+
+      .read-time {
+        margin-left: 8px;
+      }
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: $dark-green-text;
+
+      .read-more a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .read-more a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: $dark-green-text;
+      }
+    }
+  }
+}
+
+$dark-mode: false;
+
+.blog {
+  @if $dark-mode {
+    background-color: #222;
+    color: white;
+
+    .card {
+      background-color: #333;
+    }
+  }
+}
