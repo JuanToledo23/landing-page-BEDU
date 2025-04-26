@@ -94,19 +94,15 @@
 @keyframes up-and-down {
   0% {
     top: 0;
-    background-color: #04ff19;
   }
   50% {
     top: 60px;
-    background-color: #ff0404;
   }
   70% {
     top: 60px;
-    background-color: #efff15;
   }
   100% {
     top: 0;
-    background-color: #04c0ff;
   }
 }
 
