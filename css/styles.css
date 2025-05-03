@@ -150,11 +150,19 @@ footer {
 }
 
 /* Diseño responsive */
-@media (max-width: 600px) {
+@media (max-width: 575px) {
+  body {
+    background-color: #1d8b24;
+  }
   /* .grid-section {
     grid-template-columns: 1fr;
   }
   .banner h1 {
     font-size: 30px;
   } */
+}
+
+.banner h1 {
+  font-size: 30px;
+  color: #1d8b24;
 }

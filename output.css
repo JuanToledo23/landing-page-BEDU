@@ -1,0 +1,91 @@
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+.about-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+.about-page .top-info {
+  margin-bottom: 50px;
+}
+.about-page .top-info h1 {
+  color: #c1272d;
+  font-size: 36px;
+  font-family: "Alegreya", serif;
+}
+.about-page .top-info p {
+  font-size: 18px;
+  color: #333;
+}
+.about-page .features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.about-page .features .feature {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.about-page .features .feature img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: backgroup-color 1s ease-in-out;
+}
+.about-page .features .feature h3 {
+  color: #025157;
+  margin-bottom: 10px;
+}
+.about-page .features .feature p {
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog button {
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=output.css.map */

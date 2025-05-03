@@ -1,0 +1,52 @@
+.about-page {
+    padding: 40px 20px;
+    text-align: center;
+  
+    .top-info {
+      margin-bottom: 50px;
+  
+      h1 {
+        color: #c1272d;
+        font-size: 36px;
+        font-family: 'Alegreya', serif;
+      }
+  
+      p {
+        font-size: 18px;
+        color: #333;
+      }
+    }
+  
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+  
+      .feature {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 300px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  
+        img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 15px;
+          cursor: pointer;
+          transition: backgroup-color 1s ease-in-out;
+        }
+  
+        h3 {
+          color: #025157;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 14px;
+          color: #3f3f3f;
+        }
+      }
+    }
+  }
